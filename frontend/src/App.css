@@ -1,0 +1,93 @@
+/* Basic styling for chat app */
+body {
+  background: #181818;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  color: #eee;
+  margin: 0;
+  padding: 0;
+}
+
+.chat-container {
+  max-width: 500px;
+  margin: 40px auto;
+  background: #23272a;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+  padding: 24px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #ffd700;
+  font-weight: 600;
+}
+
+form {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 18px;
+}
+
+input[type="text"], input[type="password"], input[type="email"] {
+  flex: 1;
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: none;
+  background: #2c2f33;
+  color: #ffd700;
+  font-size: 1rem;
+}
+
+button {
+  padding: 8px 16px;
+  border-radius: 6px;
+  border: none;
+  background: #ffd700;
+  color: #181818;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background: #ffc300;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-height: 320px;
+  overflow-y: auto;
+  border-top: 1px solid #292929;
+}
+
+li {
+  margin: 10px 0;
+  background: #2c2f33;
+  padding: 10px 14px;
+  border-radius: 6px;
+  word-break: break-word;
+}
+
+li strong {
+  color: #ffd700;
+  margin-right: 6px;
+}
+
+.timestamp {
+  font-size: 0.8em;
+  color: #bbb;
+  margin-left: 8px;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  background: #23272a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ffd700;
+  border-radius: 8px;
+}
